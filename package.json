@@ -1,0 +1,36 @@
+{
+  "name": "monorepo-template",
+  "private": true,
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "dev:web": "turbo run dev --filter ui --filter web",
+    "lint": "turbo lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "prepare": "husky",
+    "test": "vitest",
+    "test:watch": "vitest --watch",
+    "test:coverage": "vitest --coverage"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.4.1",
+    "@commitlint/config-conventional": "^19.4.1",
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "^6.5.0",
+    "@testing-library/react": "^16.0.1",
+    "@vitejs/plugin-react": "^4.3.1",
+    "@vitest/coverage-v8": "^2.0.5",
+    "husky": "^9.1.5",
+    "jsdom": "^25.0.0",
+    "lint-staged": "^15.2.10",
+    "prettier": "^3.2.5",
+    "prettier-plugin-tailwindcss": "^0.6.6",
+    "turbo": "^2.1.1",
+    "typescript": "^5.4.5",
+    "vitest": "^2.0.5"
+  },
+  "packageManager": "pnpm@8.15.6",
+  "engines": {
+    "node": ">=18"
+  }
+}
