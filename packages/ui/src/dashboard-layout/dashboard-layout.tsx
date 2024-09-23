@@ -29,8 +29,9 @@ interface DashboardContentProps extends HTMLAttributes<HTMLDivElement> {}
 export const DashboardContent = ({ className, children, ...props }: DashboardContentProps) => {
   return (
     <div className={cn('bg-foreground flex-grow px-2.5', className)} {...props}>
-      <div className="border-t border-t-[#071e3f]" />
-      <div className="border-border border-x bg-white">{children}</div>
+      <div className="border-border min-h-full border-x border-t border-t-[#071e3f] bg-white">
+        {children}
+      </div>
     </div>
   );
 };
