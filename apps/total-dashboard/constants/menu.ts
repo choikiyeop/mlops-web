@@ -1,6 +1,6 @@
 import { Menu } from '@repo/ui';
 
-type MenuType = 'SYSTEM_MENU' | 'CLUSTER_MENU';
+type MenuType = 'SYSTEM_MENU' | 'CLUSTER_MENU' | 'AI_SERVICE_MENU';
 
 export const MENUS: Record<MenuType, Menu[]> = {
   SYSTEM_MENU: [
@@ -40,7 +40,6 @@ export const MENUS: Record<MenuType, Menu[]> = {
     },
     {
       name: '시스템',
-      href: '/system',
       children: [
         {
           name: '노드',
@@ -62,7 +61,6 @@ export const MENUS: Record<MenuType, Menu[]> = {
     },
     {
       name: '모니터링',
-      href: '/monitoring',
       children: [
         {
           name: '모니터링 대시보드',
@@ -80,7 +78,6 @@ export const MENUS: Record<MenuType, Menu[]> = {
     },
     {
       name: '카탈로그',
-      href: '/catalog',
       children: [
         {
           name: '노트북 이미지 목록',
@@ -98,7 +95,6 @@ export const MENUS: Record<MenuType, Menu[]> = {
     },
     {
       name: '스토리지',
-      href: '/storage',
       children: [
         {
           name: '볼륨',
@@ -140,7 +136,6 @@ export const MENUS: Record<MenuType, Menu[]> = {
     },
     {
       name: '모델 카탈로그',
-      href: '/model-catalog',
       children: [
         {
           name: '모델 카탈로그',
@@ -155,6 +150,37 @@ export const MENUS: Record<MenuType, Menu[]> = {
     {
       name: '데이터레이크',
       href: '/datalake',
+    },
+  ],
+  AI_SERVICE_MENU: [
+    {
+      name: 'AI 카탈로그',
+      href: '/ai-catalog',
+    },
+    {
+      name: 'AI 워크스페이스',
+      children: [
+        {
+          name: '개요',
+          href: '/ai-summary',
+        },
+        {
+          name: '워크플로우',
+          href: '/ai-workflow',
+        },
+        {
+          name: '로그',
+          href: '/ai-log',
+        },
+      ],
+    },
+    {
+      name: '도구',
+      href: '/ai-tool',
+    },
+    {
+      name: '데이터',
+      href: '/ai-data',
     },
   ],
 };
