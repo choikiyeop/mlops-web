@@ -17,6 +17,9 @@ const config: Config = {
           DEFAULT: 'var(--primary)',
         },
       },
+      backgroundImage: {
+        checked: "url('/icons/checked.png')",
+      },
     },
   },
   plugins: [],
