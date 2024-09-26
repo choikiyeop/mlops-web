@@ -13,6 +13,14 @@ type Story = StoryObj<typeof meta>;
 export const Primary: Story = {
   args: {
     variant: 'default',
+    size: 'default',
+    children: '버튼',
+  },
+};
+
+export const Secondary: Story = {
+  args: {
+    variant: 'secondary',
     size: 'lg',
     children: '버튼',
   },
