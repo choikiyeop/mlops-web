@@ -14,6 +14,9 @@ const config: Config = {
         background: 'var(--background)',
         foreground: 'var(--foreground)',
       },
+      backgroundImage: {
+        checked: "url('/icons/checked.png')",
+      },
     },
   },
   plugins: [],

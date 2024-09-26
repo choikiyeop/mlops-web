@@ -1,11 +1,11 @@
 'use client';
 
-import { ComponentPropsWithoutRef, ElementRef, forwardRef, HTMLAttributes } from 'react';
+import { ComponentPropsWithoutRef, ElementRef, forwardRef } from 'react';
 import { cn } from '../../lib/utils';
 
 type CheckedState = boolean | 'indeterminate';
 
-interface CheckboxProps extends Omit<ComponentPropsWithoutRef<'input'>, 'defaultChecked'> {
+export interface CheckboxProps extends Omit<ComponentPropsWithoutRef<'input'>, 'defaultChecked'> {
   onCheckedChange?: (checked: CheckedState) => void;
 }
 
