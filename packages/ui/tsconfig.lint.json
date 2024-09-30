@@ -5,6 +5,8 @@
   },
   "include": [
     "src",
+    "components",
+    "hooks",
     "lib",
     "turbo",
     "postcss.config.mjs",

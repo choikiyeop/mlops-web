@@ -13,10 +13,10 @@ type Story = StoryObj<typeof meta>;
 export const Primary: Story = {
   args: {
     children: (
-      <>
+      <DashboardLayout className="min-h-screen min-w-[800px]">
         <DashboardTitle>제목</DashboardTitle>
         <DashboardContent>ㅁㄴㅇ</DashboardContent>
-      </>
+      </DashboardLayout>
     ),
   },
 };
