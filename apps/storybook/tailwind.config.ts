@@ -16,6 +16,7 @@ const config: Config = {
       },
       backgroundImage: {
         checked: "url('/icons/checked.png')",
+        select: "url('/icons/select.png')",
       },
     },
   },
